@@ -16,7 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #e8dfc8; /* darker beige */
+    background-color: #e8dfc8;
     padding: 10px 20px;
     position: fixed;
     top: 0;
@@ -32,11 +32,22 @@
     width: auto;
     object-fit: contain;
   }
+  .nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+  }
   .nav-links a {
-    margin: 0 12px;
+    flex: 1;
+    text-align: center;
+    padding: 12px 0;
     text-decoration: none;
     color: #4a4233;
     font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  .nav-links a:hover {
+    background-color: #d8cfb8;
   }
   .hero {
     padding-top: 120px;
@@ -60,9 +71,9 @@
 
   <!-- Permanent Horizontal Navigation Bar -->
   <header class="navbar">
-    <div class="logo-container">
+    <a href="index.html" class="logo-container">
       <img src="logo.png" alt="Sankalp Logo" class="logo" />
-    </div>
+    </a>
     <nav class="nav-links">
       <a href="index.html">Home</a>
       <a href="wings.html">Wings</a>

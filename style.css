@@ -1,10 +1,10 @@
-/* GLOBAL BEIGE THEME */
+/* Base beige theme */
 body {
   margin: 0;
   padding: 0;
-  background-color: #f3ead7;
-  font-family: Arial, sans-serif;
-  color: #4a4233;
+  background-color: #f5f1e3;
+  font-family: "Georgia", serif;
+  color: #3a352d;
 }
 
 /* NAVBAR */
@@ -15,66 +15,96 @@ body {
   background-color: #e8dfc8;
   padding: 10px 20px;
   position: fixed;
-  width: 100%;
   top: 0;
+  width: 100%;
   z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* LOGO */
 .logo-container {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
+  height: 60px;
+  width: 60px;
 }
 
 .logo {
-  height: 60px; /* MEDIUM SIZE */
+  height: 100%;
   width: auto;
+  object-fit: contain;
+  cursor: pointer;
 }
 
-/* NAVIGATION LINKS */
 .nav-links {
   display: flex;
-  flex: 1;
   justify-content: space-evenly;
+  flex: 1;
   margin-left: 40px;
 }
 
 .nav-links a {
   flex: 1;
   text-align: center;
-  padding: 14px 0;
+  padding: 12px 0;
   text-decoration: none;
-  font-size: 17px;
   color: #4a4233;
-  transition: background-color 0.3s ease;
+  font-size: 17px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* HOVER EFFECT — NO UNDERLINE */
 .nav-links a:hover {
-  background-color: #d8cfb8;
-  text-decoration: none;
+  background-color: #d9cfb6;
+  color: #2f271e;
 }
 
-/* REMOVE UNDERLINE ON ALL STATES */
-.nav-links a:visited,
-.nav-links a:active,
-.nav-links a:focus {
-  text-decoration: none;
+/* HERO SECTION */
+.hero {
+  padding-top: 130px;
+  background-color: #f5f1e3;
+  text-align: center;
+  padding-bottom: 60px;
+}
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+.hero p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-/* PAGE SPACING BELOW FIXED NAVBAR */
-.main-content {
-  padding-top: 110px;
+/* INTRO SECTION */
+.intro {
+  padding: 30px 40px;
+  line-height: 1.6;
+}
+.intro h2 {
+  font-size: 30px;
 }
 
-/* Optional subtle animation on hero text */
-.fade-in {
-  animation: fadeIn 1.5s ease-in-out;
+/* GRID CARDS */
+.sections-grid {
+  padding: 20px 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.section-card {
+  background-color: #e8dfc8;
+  padding: 25px;
+  border: 1px solid #c6b89e;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+.section-card:hover {
+  transform: translateY(-5px);
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+/* FOOTER */
+.footer {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #e1d7bd;
+  text-align: center;
+  font-size: 14px;
 }

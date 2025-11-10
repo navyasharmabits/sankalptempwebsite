@@ -299,7 +299,21 @@ footer {
    MOBILE RESPONSIVENESS
 ========================= */
 @media (max-width: 768px) {
+.pub-card {
+    width: 100%;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
 
+  .pub-btn,
+  .view-report-button {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
   body {
     padding-top: 150px !important;
   }

@@ -1,47 +1,100 @@
-<!-- posts.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Posts - Sankalp</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications – SANKALP</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div class="navbar">
-<div class="logo">LOGO</div>
-<div class="navlinks">
-<a href="index.html">Home</a>
-<a href="wings.html">Wings</a>
-<a href="about.html">About Us</a>
-<a href="inductions.html">Inductions</a>
-<a href="posts.html">Posts</a>
-<a href="contact.html">Contact Us</a>
-<a href="office.html">Office</a>
-</div>
-</div>
 
+  <!-- Navbar -->
+  <header class="navbar" role="banner" aria-label="Main navigation">
+    <a href="index.html" class="logo-container" aria-label="Sankalp home">
+      <img src="logo.png" alt="Sankalp Logo" class="logo" />
+    </a>
 
-<div class="content">
-<h1>Posts</h1>
+    <nav class="nav-links" role="navigation" aria-label="Primary">
+      <a href="posts.html" class="active">Publications</a>
+      <a href="wings.html">Wings</a>
+      <a href="inductions.html">Inductions</a>
+      <a href="office.html">Executive Office</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="account.html">My Account</a>
+    </nav>
+  </header>
 
+  <!-- Hero Section -->
+  <section class="hero hero-small">
+    <h1>Publications Archive</h1>
+    <p>Formal Reports, Articles, Research Papers, and Documentation</p>
+  </section>
 
-<div class="post-card">
-<h2>Sample Event Report Title</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pretium massa ac cursus lacinia.</p>
-</div>
+  <!-- Intro Section -->
+  <section class="container" style="text-align:center; margin-top:40px;">
+    <p style="max-width:900px;margin:auto;font-size:18px;line-height:1.6;">
+      This page contains all official written outputs of SANKALP, including 
+      research reports, cultural documentation, analytical papers, reports from 
+      Wings, and written directives prepared by committees and the Executive Office.
+    </p>
+  </section>
 
+  <!-- Publications List -->
+  <section class="container" style="margin-top:40px;">
+    <div class="pub-grid">
 
-<div class="post-card">
-<h2>Weekly Update</h2>
-<p>Praesent vel molestie ligula. Nullam fringilla urna eu arcu fermentum placerat.</p>
-</div>
+      <!-- Publication Card -->
+      <div class="pub-card">
+        <h3>Title of Report 1</h3>
+        <p class="pub-meta">Research Wing · January 2025</p>
+        <p class="pub-desc">
+          Short description of the report. Summarizes the purpose, scope, and 
+          conclusions of the document in 2–3 lines.
+        </p>
+        <a href="#" class="pub-btn">View Report</a>
+      </div>
 
+      <!-- Publication Card -->
+      <div class="pub-card">
+        <h3>Title of Article 2</h3>
+        <p class="pub-meta">Editorial Wing · March 2025</p>
+        <p class="pub-desc">
+          Concise summary of the article. Can be a commentary, analysis, or 
+          culture-based writing.
+        </p>
+        <a href="#" class="pub-btn">Read Article</a>
+      </div>
 
-<div class="post-card">
-<h2>Announcement Placeholder</h2>
-<p>Replace this text later with official Sankalp posts, notices, or updates.</p>
-</div>
-</div>
+      <!-- Publication Card -->
+      <div class="pub-card">
+        <h3>Cultural Documentation File</h3>
+        <p class="pub-meta">Cultural Preservation Wing · 2025</p>
+        <p class="pub-desc">
+          In-depth cultural study, documentation of practices, history, or 
+          heritage preservation materials.
+        </p>
+        <a href="#" class="pub-btn">Open Document</a>
+      </div>
+
+      <!-- Add as many such cards as required -->
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <strong>Sankalp</strong>
+        <div class="footer-text">
+          Society for Awareness of National Issues and Knowledge of Administration Law and Policy – 
+          Birla Institute of Technology and Science Pilani, Hyderabad Campus
+        </div>
+      </div>
+      <div class="footer-text">Contact: sankalpbphc@gmail.com · 9354944243 · © 2025 Sankalp</div>
+    </div>
+  </footer>
+
 </body>
 </html>

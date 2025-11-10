@@ -270,4 +270,20 @@ footer {
   color: #444;
 }
 
+.wings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.wing-card {
+  background: #e8dfc8;
+  border: 1px solid #c6b89e;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+  line-height: 1.5;
+  font-size: 18px;
+}
 

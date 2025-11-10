@@ -1,6 +1,6 @@
-/* =========================
-   GLOBAL RESET
-========================= */
+/* ===========================================
+   GLOBAL BASE
+=========================================== */
 html, body {
   margin: 0;
   padding: 0;
@@ -11,26 +11,20 @@ html, body {
 }
 
 body {
-  padding-top: 120px; /* default desktop */
+  padding-top: 120px;
 }
 
-/* =========================
-   LINKS
-========================= */
-a,
-a:visited,
-a:active {
+a, a:visited, a:active {
   color: #4a4233;
   text-decoration: none;
 }
 a:hover {
-  color: #4a4233;
   background-color: #d8cfb8;
 }
 
-/* =========================
+/* ===========================================
    NAVBAR
-========================= */
+=========================================== */
 .navbar {
   display: flex;
   align-items: center;
@@ -43,40 +37,36 @@ a:hover {
   z-index: 1000;
 }
 
-/* LOGO */
 .logo-container {
   height: 60px;
   width: 60px;
 }
 .logo {
+  width: 100%;
   height: 100%;
-  width: auto;
   object-fit: contain;
 }
 
-/* NAV LINKS */
 .nav-links {
   display: flex;
   justify-content: space-evenly;
   flex: 1;
 }
+
 .nav-links a {
   flex: 1;
   text-align: center;
   padding: 12px 0;
   font-size: 16px;
-  transition: background-color 0.3s ease;
-}
-.nav-links a:hover {
-  background-color: #d8cfb8;
+  transition: 0.3s ease;
 }
 
-/* =========================
+/* ===========================================
    HERO
-========================= */
-.hero,
-.hero-small {
+=========================================== */
+.hero, .hero-small {
   padding-top: 120px;
+  background-color: #f5f1e3;
   text-align: center;
   padding-bottom: 40px;
 }
@@ -88,12 +78,13 @@ a:hover {
   font-size: 20px;
 }
 
-/* =========================
-   GENERIC SECTION
-========================= */
+/* ===========================================
+   SECTION
+=========================================== */
 section {
   padding: 30px 20px;
 }
+
 .section-title {
   text-align: center;
   font-size: 28px;
@@ -103,144 +94,74 @@ section {
 .intro {
   max-width: 900px;
   margin: auto;
-  text-align: center;
-  line-height: 1.6;
   font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
 }
 
-/* =========================
+/* ===========================================
    CORE ACTIVITIES
-========================= */
+=========================================== */
 .core-activities {
   display: flex;
   gap: 20px;
   max-width: 900px;
   margin: auto;
 }
+
 .activity-card {
   flex: 1;
-  background-color: #e8dfc8;
   padding: 20px;
+  background-color: #e8dfc8;
   border: 1px solid #c6b89e;
   border-radius: 8px;
   font-size: 18px;
 }
 
-/* =========================
-   GRID LAYOUTS
-========================= */
-.sections-grid,
-.grid-gallery,
-.wings-grid,
-.pub-grid {
+/* ===========================================
+   SECTIONS GRID
+=========================================== */
+.sections-grid {
   max-width: 900px;
   margin: auto;
 }
 
-.sections-grid {
-  width: 100%;
-}
-
-.grid-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 30px;
-  margin-bottom: 40px;
-}
-
-.wings-grid,
-.pub-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-  margin-top: 40px;
-}
-
-.section-card,
-.wing-card,
-.pub-card {
+.section-card {
   background-color: #e8dfc8;
   padding: 20px;
+  margin: 10px 0;
   border: 1px solid #c6b89e;
-  border-radius: 6px;
   text-align: center;
+  border-radius: 6px;
   font-size: 18px;
 }
 
-/* =========================
-   PUBLICATIONS
-========================= */
-.pub-meta {
-  font-size: 14px;
-  opacity: 0.7;
-  margin-bottom: 10px;
-}
-
-.pub-desc {
-  margin: 10px 0 15px;
-  font-size: 16px;
-}
-
-.pub-btn,
-.view-report-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #d8cfb8;
-  color: #4a4233;
-  border-radius: 6px;
-  border: 1px solid #c6b89e;
-  transition: background 0.3s ease;
-  text-align: center;
-  white-space: normal;
-  max-width: 100%;
-}
-.pub-btn:hover {
-  background: #cfc6af;
-}
-
-/* =========================
-   PROFILE CARDS
-========================= */
-.card {
-  background-color: rgb(245, 245, 245);
+/* ===========================================
+   FOOTER
+=========================================== */
+footer {
+  background-color: #e8dfc8;
   padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
+  margin-top: 40px;
+  text-align: center;
+  border-top: 1px solid #c6b89e;
 }
 
-.profile-img {
-  width: 100%;
-  height: 230px;
-  object-fit: cover;
-  border-radius: 12px;
-  background-color: rgb(220,220,220);
-}
-
-.card h3 {
-  font-size: 22px;
-  margin-top: 15px;
-}
-.card p {
-  font-size: 16px;
-  margin-top: 5px;
-  color: #444;
-}
-
-/* =========================
+/* ===========================================
    CONTACT PAGE
-========================= */
+=========================================== */
+.contact-us-section {
+  text-align: center;
+  margin: 50px auto;
+}
+
 .contact-form input,
 .contact-form textarea {
   width: 100%;
   max-width: 600px;
-  margin: 0 auto;
   display: block;
   padding: 12px;
+  margin: 0 auto;
   border: 1px solid #c6b89e;
   background: #e8dfc8;
 }
@@ -249,11 +170,19 @@ section {
   height: 150px;
 }
 
+.contact-form button {
+  margin-top: 18px;
+}
+
+.contact-direct {
+  text-align: center;
+  margin: 70px auto;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
-  margin-top: 25px;
 }
 
 .contact-card {
@@ -263,12 +192,12 @@ section {
   border-radius: 8px;
 }
 
-/* =========================
-   PAGE CONTAINER
-========================= */
+/* ===========================================
+   GENERIC PAGES
+=========================================== */
 .page-container {
   max-width: 1200px;
-  margin: 50px auto;
+  margin: 100px auto 50px;
   padding: 0 20px;
   text-align: center;
 }
@@ -277,48 +206,98 @@ section {
   font-size: 40px;
   margin-bottom: 10px;
 }
-
 .page-description {
   font-size: 18px;
-  margin-bottom: 40px;
   line-height: 1.4;
+  margin-bottom: 40px;
 }
 
-/* =========================
-   FOOTER
-========================= */
-footer {
-  background-color: #e8dfc8;
+/* ===========================================
+   GENERIC GRID
+=========================================== */
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+/* ===========================================
+   CARD COMPONENTS
+=========================================== */
+.card {
+  background-color: rgb(245, 245, 245);
   padding: 20px;
-  margin-top: 40px;
-  border-top: 1px solid #c6b89e;
-  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  transition: 0.15s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
 
-/* =========================
-   MOBILE RESPONSIVENESS
-========================= */
-@media (max-width: 768px) {
-.pub-card {
-    width: 100%;
-    max-width: 100%;
-    overflow-wrap: break-word;
-    word-break: break-word;
-  }
+.profile-img {
+  width: 100%;
+  height: 230px;
+  border-radius: 12px;
+  object-fit: cover;
+  background-color: rgb(220,220,220);
+}
 
-  .pub-btn,
-  .view-report-button {
-    width: 100%;
-    max-width: 100%;
-    padding: 12px 8px;
-    font-size: 14px;
-    box-sizing: border-box;
-  }
+/* ===========================================
+   WINGS & PUBLICATIONS GRID
+=========================================== */
+
+.pub-grid,
+.wings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.pub-card,
+.wing-card {
+  padding: 20px;
+  background: #e8dfc8;
+  border-radius: 8px;
+  border: 1px solid #c6b89e;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.pub-meta {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+
+.pub-desc {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.pub-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #c6b89e;
+  background: #d8cfb8;
+  text-align: center;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
+
+/* ===========================================
+   MOBILE FIXES
+=========================================== */
+@media (max-width: 768px) {
+
   body {
     padding-top: 150px !important;
   }
 
-  /* Navbar stacking */
   .navbar {
     flex-direction: column;
     padding: 12px 0;
@@ -327,49 +306,50 @@ footer {
   .logo-container {
     height: 50px;
     width: 50px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
 
   .nav-links {
-    width: 100%;
-    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 4px;
+    width: 100%;
   }
 
   .nav-links a {
     flex: 0 0 45%;
     font-size: 15px;
-    padding: 10px 0;
+    padding: 10px;
+    white-space: normal;
   }
 
-  /* Hero text */
+  .core-activities {
+    flex-direction: column;
+  }
+
   .hero h1 { font-size: 32px; }
   .hero p { font-size: 17px; }
 
   .page-title { font-size: 32px; }
   .page-description { font-size: 16px; }
 
-  /* Cards + publications */
-  .card,
-  .wing-card,
-  .pub-card {
+  .pub-card, .wing-card {
     padding: 15px;
   }
+}
 
-  .pub-btn,
-  .view-report-button {
-    width: 100%;
+/* Force 1-column PUB GRID on small phones */
+@media (max-width: 480px) {
+  .pub-grid,
+  .wings-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .pub-btn {
     font-size: 14px;
   }
 
-  /* Push content below tall navbar */
-  .page-container {
-    padding-top: 130px;
-  }
-
-  .core-activities {
-    flex-direction: column;
+  .pub-card {
+    width: 100%;
+    max-width: 100%;
   }
 }

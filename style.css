@@ -19,7 +19,18 @@ body {
   width: 100%;
   z-index: 1000;
 }
+a,
+a:visited,
+a:active {
+  color: #4a4233;     /* your chosen beige-theme dark text */
+  text-decoration: none;
+}
 
+a:hover {
+  color: #4a4233;     /* prevent blue on hover */
+  text-decoration: none;
+  background-color: #d8cfb8; /* your hover background */
+}
 /* Logo container */
 .logo-container {
   height: 60px;

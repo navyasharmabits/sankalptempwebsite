@@ -353,3 +353,8 @@ footer {
     max-width: 100%;
   }
 }
+@media (max-width: 430px) {
+  .pub-grid { grid-template-columns: 1fr !important; }
+  .pub-card { min-width: 0 !important; }
+  .pub-btn { display:block; width:100%; box-sizing:border-box; }
+}

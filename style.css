@@ -329,3 +329,58 @@ footer {
   background: #cfc6af;
 }
 
+@media (max-width: 768px) {
+
+  /* navbar shrink */
+  .nav-links a {
+    font-size: 13px;
+    padding: 8px 0;
+  }
+
+  .page-title {
+    font-size: 32px;
+  }
+
+  .page-description {
+    font-size: 16px;
+  }
+
+  .core-activities {
+    flex-direction: column;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 90%;
+  }
+
+  .office-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .publications-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pub-card {
+    font-size: 16px;
+  }
+
+  .pub-button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .wings-container {
+    padding: 20px;
+  }
+
+  .wing-card {
+    padding: 15px;
+  }
+
+  .wing-title {
+    font-size: 20px;
+  }
+}
+

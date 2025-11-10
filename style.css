@@ -342,3 +342,17 @@ footer {
     font-size: 17px;
   }
 }
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .logo-container {
+    margin: 0 auto;
+  }
+
+  /* Optional: hide navigation links on mobile if they make symmetry messy */
+  .nav-links {
+    display: none;
+  }
+}

@@ -366,4 +366,11 @@ footer {
     width: 100%;
     text-align: center;
   }
+  
+}
+/* On phone, navbar becomes taller, so push more */
+@media (max-width: 768px) {
+  .page-container {
+    padding-top: 130px;
+  }
 }
